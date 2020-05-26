@@ -1,0 +1,195 @@
+{
+    "name": "ddf--ecdc--covid_19_geographic_distribution",
+    "language": {
+        "name": "English",
+        "id": "en"
+    },
+    "title": "ECDC geographic distributi COVID-19 cases",
+    "description": "ECDC's aggregation of world wide reported covid-19 cases, updated daily.",
+    "author": "ECDC",
+    "license": "CC-BY-4.0",
+    "created": "2020-05-26T20:01:09.083518+00:00",
+    "translations": [],
+    "version": "0.0.1",
+    "resources": [
+        {
+            "name": "ddf--concepts",
+            "path": "ddf--concepts.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "concept"
+                    },
+                    {
+                        "name": "concept_type"
+                    },
+                    {
+                        "name": "domain"
+                    },
+                    {
+                        "name": "name"
+                    }
+                ],
+                "primaryKey": "concept"
+            }
+        },
+        {
+            "name": "ddf--datapoints--cases--by--geo_id--day",
+            "path": "ddf--datapoints--cases--by--geo_id--day.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "geo_id"
+                    },
+                    {
+                        "name": "day"
+                    },
+                    {
+                        "name": "cases"
+                    }
+                ],
+                "primaryKey": [
+                    "geo_id",
+                    "day"
+                ]
+            }
+        },
+        {
+            "name": "ddf--datapoints--deaths--by--geo_id--day",
+            "path": "ddf--datapoints--deaths--by--geo_id--day.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "geo_id"
+                    },
+                    {
+                        "name": "day"
+                    },
+                    {
+                        "name": "deaths"
+                    }
+                ],
+                "primaryKey": [
+                    "geo_id",
+                    "day"
+                ]
+            }
+        },
+        {
+            "name": "ddf--entities--geo_id",
+            "path": "ddf--entities--geo_id.csv",
+            "schema": {
+                "fields": [
+                    {
+                        "name": "geo_id"
+                    },
+                    {
+                        "name": "continent_exp"
+                    },
+                    {
+                        "name": "countries_and_territories"
+                    },
+                    {
+                        "name": "countryterritory_code"
+                    },
+                    {
+                        "name": "pop_data2018"
+                    }
+                ],
+                "primaryKey": "geo_id"
+            }
+        }
+    ],
+    "ddfSchema": {
+        "concepts": [
+            {
+                "primaryKey": [
+                    "concept"
+                ],
+                "value": "concept_type",
+                "resources": [
+                    "ddf--concepts"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "concept"
+                ],
+                "value": "domain",
+                "resources": [
+                    "ddf--concepts"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "concept"
+                ],
+                "value": "name",
+                "resources": [
+                    "ddf--concepts"
+                ]
+            }
+        ],
+        "entities": [
+            {
+                "primaryKey": [
+                    "geo_id"
+                ],
+                "value": "continent_exp",
+                "resources": [
+                    "ddf--entities--geo_id"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo_id"
+                ],
+                "value": "countries_and_territories",
+                "resources": [
+                    "ddf--entities--geo_id"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo_id"
+                ],
+                "value": "countryterritory_code",
+                "resources": [
+                    "ddf--entities--geo_id"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "geo_id"
+                ],
+                "value": "pop_data2018",
+                "resources": [
+                    "ddf--entities--geo_id"
+                ]
+            }
+        ],
+        "datapoints": [
+            {
+                "primaryKey": [
+                    "day",
+                    "geo_id"
+                ],
+                "value": "cases",
+                "resources": [
+                    "ddf--datapoints--cases--by--geo_id--day"
+                ]
+            },
+            {
+                "primaryKey": [
+                    "day",
+                    "geo_id"
+                ],
+                "value": "deaths",
+                "resources": [
+                    "ddf--datapoints--deaths--by--geo_id--day"
+                ]
+            }
+        ],
+        "synonyms": []
+    }
+}
