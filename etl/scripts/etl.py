@@ -158,7 +158,7 @@ if __name__ == '__main__':
 
     # read source
     try:
-        df = pd.read_csv(source_path, encoding='latin-1', keep_default_na=False)
+        df = pd.read_csv(source_path, keep_default_na=False)
     except pd.errors.ParserError:
         print('Could not parse source file, please check source format.', source_path)
         raise
