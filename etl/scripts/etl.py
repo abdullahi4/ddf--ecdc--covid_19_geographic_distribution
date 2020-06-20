@@ -15,7 +15,7 @@ renames = {
     'dateRep': 'day'
 }
 entity_columns = {
-    'geoId': ['geoId', 'countriesAndTerritories','countryterritoryCode','popData2018','continentExp']
+    'geoId': ['geoId', 'countriesAndTerritories','countryterritoryCode','popData2019','continentExp']
 }
 datapoint_key_concepts = ['geoId', 'dateRep']
 time_columns = {
@@ -30,7 +30,7 @@ numeric_dtypes = ['float64', 'float32', 'int32', 'int64']
 script_dir = osp.abspath(osp.dirname(__file__))
 output_dir = osp.join(script_dir, '..', '..')
 
-# script 
+# script
 
 def rename(str, renames):
     return renames[str] if str in renames else str
@@ -39,8 +39,8 @@ def concept_id(obj, renames={}, dict_value=True, dict_key=True):
     if isinstance(obj, list):
         return [concept_id(x, renames) for x in obj]
     if isinstance(obj, dict):
-        return { 
-            concept_id(key, renames) if dict_key else key 
+        return {
+            concept_id(key, renames) if dict_key else key
             :
             concept_id(value, renames) if dict_value else value
             for (key,value) in obj.items()
@@ -162,21 +162,21 @@ if __name__ == '__main__':
     except pd.errors.ParserError:
         print('Could not parse source file, please check source format.', source_path)
         raise
- 
+
     # remove and rename columns and create valid entity/concept id's
     df = df.drop(columns=remove_columns)
     df = df.rename(columns=renames)
     df = df.rename(columns=concept_id)
-    df = df.apply(lambda col: 
-        col.apply(concept_id) 
-        if col.name in id_concepts 
+    df = df.apply(lambda col:
+        col.apply(concept_id)
+        if col.name in id_concepts
         else col
     )
 
     # reformat time concept
-    df = df.apply(lambda col: 
+    df = df.apply(lambda col:
         col.apply(reformatter_datetime(time_concepts[col.name]))
-        if col.name in time_concepts 
+        if col.name in time_concepts
         else col
     )
 
