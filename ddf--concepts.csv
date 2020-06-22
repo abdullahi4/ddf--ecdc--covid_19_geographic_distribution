@@ -4,8 +4,8 @@ continent_exp,string,,Continent exp
 countries_and_territories,string,,Countries and territories
 countryterritory_code,string,,Countryterritory code
 day,time,,Day
-deaths,string,,Deaths
+deaths,measure,,Deaths
 domain,string,,Domain
 geo_id,entity_domain,,Geo
 name,string,,Name
-pop_data2019,measure,,Pop data2019
+pop_data2019,string,,Pop data2019

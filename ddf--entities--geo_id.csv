@@ -83,7 +83,7 @@ gy,America,Guyana,GUY,782775
 hn,America,Honduras,HND,9746115
 hr,Europe,Croatia,HRV,4076246
 ht,America,Haiti,HTI,11263079
-hu,Europe,Hungary,HUN,9664124
+hu,Europe,Hungary,HUN,9772756
 id,Asia,Indonesia,IDN,270625567
 ie,Europe,Ireland,IRL,4904240
 il,Asia,Israel,ISR,8519373
@@ -91,12 +91,13 @@ im,Europe,Isle_of_Man,IMN,84589
 in,Asia,India,IND,1366417756
 iq,Asia,Iraq,IRQ,39309789
 ir,Asia,Iran,IRN,82913893
-is,Europe,Iceland,ISL,339037
-it,Europe,Italy,ITA,60550092
+is,Europe,Iceland,ISL,356991
+it,Europe,Italy,ITA,60359546
 je,Europe,Jersey,JEY,106800
 jm,America,Jamaica,JAM,2948277
 jo,Asia,Jordan,JOR,10101697
 jp,Asia,Japan,JPN,126860299
+jpg11668,Other,Cases_on_an_international_conveyance_Japan,,
 ke,Africa,Kenya,KEN,52573967
 kg,Asia,Kyrgyzstan,KGZ,6415851
 kh,Asia,Cambodia,KHM,16486542
@@ -114,7 +115,7 @@ lk,Asia,Sri_Lanka,LKA,21323734
 lr,Africa,Liberia,LBR,4937374
 ls,Africa,Lesotho,LSO,2125267
 lt,Europe,Lithuania,LTU,2759631
-lu,Europe,Luxembourg,LUX,61573
+lu,Europe,Luxembourg,LUX,613894
 lv,Europe,Latvia,LVA,1919968
 ly,Africa,Libya,LBY,6777453
 ma,Africa,Morocco,MAR,36471766
@@ -146,7 +147,7 @@ no,Europe,Norway,NOR,5328212
 np,Asia,Nepal,NPL,28608715
 nz,Oceania,New_Zealand,NZL,4783062
 om,Asia,Oman,OMN,4974992
-pa,America,Panama,PAN,424644
+pa,America,Panama,PAN,4176869
 pe,America,Peru,PER,32510462
 pf,Oceania,French_Polynesia,PYF,279285
 pg,Oceania,Papua_New_Guinea,PNG,8776119
@@ -177,8 +178,10 @@ sr,America,Suriname,SUR,581363
 ss,Africa,South_Sudan,SSD,11062114
 st,Africa,Sao_Tome_and_Principe,STP,215048
 sv,America,El_Salvador,SLV,645355
+sx,America,Sint_Maarten,SXM,40654
 sy,Asia,Syria,SYR,17070132
 sz,Africa,Eswatini,SWZ,1148133
+tc,America,Turks_and_Caicos_islands,TCA,38194
 td,Africa,Chad,TCD,15946882
 tg,Africa,Togo,TGO,8082359
 th,Asia,Thailand,THA,69625581
@@ -195,6 +198,7 @@ uk,Europe,United_Kingdom,GBR,66647112
 us,America,United_States_of_America,USA,329064917
 uy,America,Uruguay,URY,3461731
 uz,Asia,Uzbekistan,UZB,32981715
+va,Europe,Holy_See,VAT,815
 vc,America,Saint_Vincent_and_the_Grenadines,VCT,110593
 ve,America,Venezuela,VEN,28515829
 vg,America,British_Virgin_Islands,VGB,30033
