@@ -63,7 +63,7 @@ es,Europe,Spain,ESP,46937060
 et,Africa,Ethiopia,ETH,112078727
 fi,Europe,Finland,FIN,5517919
 fj,Oceania,Fiji,FJI,889955
-fk,America,Falkland_Islands_(Malvinas),FLK,530957
+fk,America,Falkland_Islands_(Malvinas),FLK,3372
 fo,Europe,Faroe_Islands,FRO,48497
 fr,Europe,France,FRA,67012883
 ga,Africa,Gabon,GAB,2172578
@@ -72,7 +72,7 @@ ge,Europe,Georgia,GEO,3996762
 gg,Europe,Guernsey,GGY,62792
 gh,Africa,Ghana,GHA,30417858
 gi,Europe,Gibraltar,GIB,33706
-gl,America,Greenland,GRL,5666
+gl,America,Greenland,GRL,56660
 gm,Africa,Gambia,GMB,2347696
 gn,Africa,Guinea,GIN,12771246
 gq,Africa,Equatorial_Guinea,GNQ,1355982
@@ -110,7 +110,7 @@ kz,Asia,Kazakhstan,KAZ,18551428
 la,Asia,Laos,LAO,7169456
 lb,Asia,Lebanon,LBN,6855709
 lc,America,Saint_Lucia,LCA,182795
-li,Europe,Liechtenstein,LIE,3802
+li,Europe,Liechtenstein,LIE,38020
 lk,Asia,Sri_Lanka,LKA,21323734
 lr,Africa,Liberia,LBR,4937374
 ls,Africa,Lesotho,LSO,2125267
@@ -131,7 +131,7 @@ mp,Oceania,Northern_Mariana_Islands,MNP,57213
 mr,Africa,Mauritania,MRT,4525698
 ms,America,Montserrat,MSF,4991
 mt,Europe,Malta,MLT,493559
-mu,Africa,Mauritius,MUS,126967
+mu,Africa,Mauritius,MUS,1269670
 mv,Asia,Maldives,MDV,530957
 mw,Africa,Malawi,MWI,18628749
 mx,America,Mexico,MEX,127575529
@@ -177,7 +177,7 @@ so,Africa,Somalia,SOM,15442906
 sr,America,Suriname,SUR,581363
 ss,Africa,South_Sudan,SSD,11062114
 st,Africa,Sao_Tome_and_Principe,STP,215048
-sv,America,El_Salvador,SLV,645355
+sv,America,El_Salvador,SLV,6453055
 sx,America,Sint_Maarten,SXM,40654
 sy,Asia,Syria,SYR,17070132
 sz,Africa,Eswatini,SWZ,1148133
@@ -186,7 +186,7 @@ td,Africa,Chad,TCD,15946882
 tg,Africa,Togo,TGO,8082359
 th,Asia,Thailand,THA,69625581
 tj,Asia,Tajikistan,TJK,9321023
-tl,Asia,Timor_Leste,TLS,129312
+tl,Asia,Timor_Leste,TLS,1293120
 tn,Africa,Tunisia,TUN,11694721
 tr,Asia,Turkey,TUR,83429607
 tt,America,Trinidad_and_Tobago,TTO,1394969
