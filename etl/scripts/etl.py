@@ -24,7 +24,7 @@ time_columns = {
         'to': '%Y%m%d'
     }
 }
-remove_columns = ['day','month','year']
+remove_columns = ['day','month','year', 'year_week']
 numeric_dtypes = ['float64', 'float32', 'int32', 'int64']
 
 script_dir = osp.abspath(osp.dirname(__file__))
@@ -164,7 +164,7 @@ if __name__ == '__main__':
         raise
 
     # remove and rename columns and create valid entity/concept id's
-    df = df.drop(columns=remove_columns)
+    df = df[df.columns.difference(remove_columns)]
     df = df.rename(columns=renames)
     df = df.rename(columns=concept_id)
     df = df.apply(lambda col:
