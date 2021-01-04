@@ -8,7 +8,7 @@
     "description": "ECDC's aggregation of world wide reported covid-19 cases, updated daily.",
     "author": "ECDC",
     "license": "CC-BY-4.0",
-    "created": "2020-12-13T12:51:53.162768+00:00",
+    "created": "2021-01-04T02:53:06.130251+00:00",
     "translations": [],
     "version": "0.0.1",
     "resources": [
@@ -34,8 +34,8 @@
             }
         },
         {
-            "name": "ddf--datapoints--cases--by--geo_id--day",
-            "path": "ddf--datapoints--cases--by--geo_id--day.csv",
+            "name": "ddf--datapoints--cases_weekly--by--geo_id--day",
+            "path": "ddf--datapoints--cases_weekly--by--geo_id--day.csv",
             "schema": {
                 "fields": [
                     {
@@ -45,7 +45,7 @@
                         "name": "day"
                     },
                     {
-                        "name": "cases"
+                        "name": "cases_weekly"
                     }
                 ],
                 "primaryKey": [
@@ -55,8 +55,8 @@
             }
         },
         {
-            "name": "ddf--datapoints--cumulative_number_for_14_days_of_covid_19_cases_per_100000--by--geo_id--day",
-            "path": "ddf--datapoints--cumulative_number_for_14_days_of_covid_19_cases_per_100000--by--geo_id--day.csv",
+            "name": "ddf--datapoints--deaths_weekly--by--geo_id--day",
+            "path": "ddf--datapoints--deaths_weekly--by--geo_id--day.csv",
             "schema": {
                 "fields": [
                     {
@@ -66,7 +66,7 @@
                         "name": "day"
                     },
                     {
-                        "name": "cumulative_number_for_14_days_of_covid_19_cases_per_100000"
+                        "name": "deaths_weekly"
                     }
                 ],
                 "primaryKey": [
@@ -76,8 +76,8 @@
             }
         },
         {
-            "name": "ddf--datapoints--deaths--by--geo_id--day",
-            "path": "ddf--datapoints--deaths--by--geo_id--day.csv",
+            "name": "ddf--datapoints--notification_rate_per_100000_population_14_days--by--geo_id--day",
+            "path": "ddf--datapoints--notification_rate_per_100000_population_14_days--by--geo_id--day.csv",
             "schema": {
                 "fields": [
                     {
@@ -87,7 +87,7 @@
                         "name": "day"
                     },
                     {
-                        "name": "deaths"
+                        "name": "notification_rate_per_100000_population_14_days"
                     }
                 ],
                 "primaryKey": [
@@ -195,9 +195,9 @@
                     "day",
                     "geo_id"
                 ],
-                "value": "cases",
+                "value": "cases_weekly",
                 "resources": [
-                    "ddf--datapoints--cases--by--geo_id--day"
+                    "ddf--datapoints--cases_weekly--by--geo_id--day"
                 ]
             },
             {
@@ -205,9 +205,9 @@
                     "day",
                     "geo_id"
                 ],
-                "value": "cumulative_number_for_14_days_of_covid_19_cases_per_100000",
+                "value": "deaths_weekly",
                 "resources": [
-                    "ddf--datapoints--cumulative_number_for_14_days_of_covid_19_cases_per_100000--by--geo_id--day"
+                    "ddf--datapoints--deaths_weekly--by--geo_id--day"
                 ]
             },
             {
@@ -215,9 +215,9 @@
                     "day",
                     "geo_id"
                 ],
-                "value": "deaths",
+                "value": "notification_rate_per_100000_population_14_days",
                 "resources": [
-                    "ddf--datapoints--deaths--by--geo_id--day"
+                    "ddf--datapoints--notification_rate_per_100000_population_14_days--by--geo_id--day"
                 ]
             }
         ],

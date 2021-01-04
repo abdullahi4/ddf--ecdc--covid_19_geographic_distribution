@@ -1,12 +1,12 @@
 concept,concept_type,domain,name
-cases,measure,,Cases
+cases_weekly,measure,,Cases weekly
 continent_exp,string,,Continent exp
 countries_and_territories,string,,Countries and territories
 countryterritory_code,string,,Countryterritory code
-cumulative_number_for_14_days_of_covid_19_cases_per_100000,string,,Cumulative number for 14 days of covid 19 cases per 100000
 day,time,,Day
-deaths,measure,,Deaths
+deaths_weekly,measure,,Deaths weekly
 domain,string,,Domain
 geo_id,entity_domain,,Geo
 name,string,,Name
+notification_rate_per_100000_population_14_days,string,,Notification rate per 100000 population 14 days
 pop_data2019,string,,Pop data2019
